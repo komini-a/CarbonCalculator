@@ -1,3 +1,50 @@
+:root {
+    --primary-color: #FEFEFF; 
+
+    --secondary-color-1: #034C3C;
+    --secondary-color-2: #3D2C2E;
+
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+  }
+  
+
+.main-calc {
+
+    min-height: 100vh; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-image: url(https://st2.depositphotos.com/1002200/7678/i/450/depositphotos_76782389-stock-photo-summer-mountain-lake-forrest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #fff; /* Make text white for contrast */
+    text-align: center; 
+    padding: 20px;
+
+}  
+
+.main-calc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    z-index: 1; /* ensures it sits above the background but behind text */
+  }
+  
+  .main-calc h1,
+  .main-calc p {
+    position: relative; /* ensures text is above the overlay */
+    z-index: 2;
+  }
 body {
     font-family: sans-serif;
 }
